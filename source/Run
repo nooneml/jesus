@@ -1,6 +1,6 @@
 #!/bin/bash
 cd $(cd $(dirname $0); pwd)
 unzip luatele.zip
-sudo lua5.3 fast.lua
+sudo lua5.3 Fast.lua
 ;;
 esac
