@@ -341,7 +341,7 @@ SudoId = ]]..data.sender.user_id..[[
 }
 ]])
 Informationlua:close()
-os.execute('cp -a source/. ./@'..botuser..' && cd @'..botuser..' &&chmod +x * &&screen -d -m -S '..botuser..' ./Run')
+os.execute('cp -a ./source/. ./@'..botuser..' && cd @'..botuser..' &&chmod +x * &&screen -d -m -S '..botuser..' ./Run')
 LuaTele.sendText(1421137574,0,"※ تم تنصيب بوت جديد\nتوكن البوت `"..text.."` \n※ يوزر البوت [@"..botuser.."] \n※ المطور ※ ["..uu.first_name.."](tg://user?id="..data.sender.user_id..")","md",true)  
 LuaTele.sendText(data.chat_id,data.id,"※ تم تشغيل البوت بنجاح \n※ معرف البوت [@"..botuser.."]\n※ المطور ※ ["..uu.first_name.."](tg://user?id="..data.sender.user_id..")","md",true)  
 else
